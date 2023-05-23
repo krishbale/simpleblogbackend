@@ -1,0 +1,14 @@
+<h1>Hello From Blog POST</h1>
+{% for post in posts reversed %}
+<div class="
+">
+<a style="text-decoration: none;" href="post/{{post.id}}">
+    <h1>{{post.title}}</h1>
+<p>{{post.created_at}}</p>
+<p>{{post.body|truncatewords:20}}</p>
+
+</a>
+
+
+</div>
+{% endfor %}
